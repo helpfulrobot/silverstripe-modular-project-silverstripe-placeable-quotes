@@ -5,39 +5,27 @@
  * @package silverstripe
  * @subpackage mysite
  */
-class PlaceableQuote extends Link
+class PlaceableQuote extends DataObject
 {
+    /**
+     * Singular name for CMS
+     * @var string
+     */
+    private static $singular_name = 'Quote';
+
+    /**
+     * Plural name for CMS
+     * @var string
+     */
+    private static $plural_name = 'Quotes';
+    
     /**
      * Database fields
      * @var array
      */
     private static $db = array(
-        'PreviewSummary' => 'Text',
-        'PreviewMore' => 'Text'
-    );
-
-    /**
-     * Has_one relationship
-     * @var array
-     */
-    private static $has_one = array(
-        'PreviewImage' => 'Image'
-    );
-
-    /**
-     * Define the default values for all the $db fields
-     * @var array
-     */
-    private static $defaults = array(
-        'PreviewMore' => 'Read more'
-    );
-
-    /**
-     * Define extensions
-     * @var array
-     */
-    private static $extensions = array(
-        'Versioned("Stage","Live")'
+        'Title' => 'Text',
+        'Quote' => 'Text'
     );
 
     /**
@@ -50,11 +38,15 @@ class PlaceableQuote extends Link
         $fields->addFieldsToTab(
             'Root.Main',
             array(
-                UploadField::create('PreviewImage','Image'),
-                TextField::create('PreviewSummary','Summary'),
-                TextField::create('PreviewMore','More')
-            ),
-            'Type'
+                TextareaField::create(
+                    'Quote',
+                    _t('Placeable.QUOTE', 'Quote')
+                ),
+                TextareaField::create(
+                    'Title',
+                    _t('Placeable.CITATION', 'Cited by')
+                )->setRows(1)
+            )
         );
         return $fields;
     }

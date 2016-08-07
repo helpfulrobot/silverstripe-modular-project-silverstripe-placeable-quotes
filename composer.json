@@ -1,6 +1,6 @@
 {
-  "name": "silverstripe-modular-project/silverstripe-placeable-previews",
-  "description": "Silverstripe previews",
+  "name": "silverstripe-modular-project/silverstripe-placeable-quotes",
+  "description": "Silverstripe quotes",
   "type": "silverstripe-module",
   "keywords": ["silverstripe", "modular", "sections"],
   "license": "BSD-3-Clause",
@@ -17,6 +17,6 @@
     "silverstripe-modular-project/silverstripe-placeable": "1.*"
   },
   "extra": {
-    "installer-name": "placeable-previews"
+    "installer-name": "placeable-quotes"
   }
 }
