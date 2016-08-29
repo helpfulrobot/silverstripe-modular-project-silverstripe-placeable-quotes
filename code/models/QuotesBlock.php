@@ -68,17 +68,13 @@ class QuotesBlock extends BlockObject
         return $fields;
     }
 }
-class QuoteBlock_Controller extends BlockObject_Controller
+class QuotesBlock_Controller extends BlockObject_Controller
 {
     public function init() {
         parent::init();
     }
 }
-class QuoteBlock_Preset extends BlockObject_Preset
+class QuotesBlock_Preset extends BlockObject_Preset
 {
-    /**
-     * Singular name for CMS
-     * @var string
-     */
-    private static $singular_name = 'Quote Preset';
+
 }
