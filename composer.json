@@ -1,6 +1,6 @@
 {
   "name": "silverstripe-modular-project/silverstripe-placeable-quotes",
-  "description": "Silverstripe quotes",
+  "description": "Silverstripe placeable sub module to provide quotes or testimonials",
   "type": "silverstripe-module",
   "keywords": ["silverstripe", "modular", "regions"],
   "license": "BSD-3-Clause",
