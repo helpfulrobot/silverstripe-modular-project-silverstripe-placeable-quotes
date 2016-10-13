@@ -14,7 +14,7 @@
   {
     "silverstripe/framework": "^3.2",
     "silverstripe/cms": "^3.2",
-    "silverstripe-modular-project/silverstripe-placeable": "1.*"
+    "silverstripe-modular-project/silverstripe-placeable": "dev-master"
   },
   "extra": {
     "installer-name": "placeable-quotes"
